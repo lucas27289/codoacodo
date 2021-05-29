@@ -6,7 +6,10 @@
 
 La consigna era dessarrollar el front de una pagina web aplicando las herramientas y conocimientos adquiridos en clase
 
-Se puede ver el proyecto funcionando en 
+Se puede ver el proyecto funcionando en:  
+[Netlify](https://youthful-lumiere-0dec13.netlify.app)  
+o en  
+[000webhost](http://lucas1989.000webhostapp.com/)
 
 Se utilizo
 
