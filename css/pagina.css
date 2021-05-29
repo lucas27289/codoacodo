@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(122, 122, 122);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 30px;
+    margin: 30px 0 50px 0;
+}
+div#imagen{
+    margin-top: -80px;
+    background-image: url('https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2018/12/09/15443955050130.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+div a{
+    font-size: 40px;
+    margin-top: 80px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.a{
+    transform: translateX(300px);
+    opacity: 0;
+}
+.b{
+    opacity: 0;
+    transform: translateY(-90px);
+}
+.c, .e, .g{
+    opacity: 0;
+    transform: translateX(-300px);
+}
+.d, .f, #imagen{
+    opacity: 0;
+    transform: translateX(300px);
+}
+.i{
+    opacity:0;
+    margin-top: -20px;
+    font-size: 25px;
+    animation: anima 4s infinite;
+}
+@keyframes anima {
+    0%{
+        color: red;
+    }
+    25%{
+        color: green;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    div#imagen{
+        height: 50px;
+        margin-top: 0;
+    }
+    div a{
+        font-size: 20px;
+        margin: 0;
+    }
+    .i{
+        font-size: small;
+        margin-top: 10px;
+    }
+}
+

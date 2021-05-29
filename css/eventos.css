@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+/*Logo*/
+#logo{
+    margin: 0 60px;
+    height: 80px;
+    width: 100px;
+    background-image: url(/img/icono.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#logo::after{
+    position: relative;
+    top: 15px;
+    right: -63px;
+    content: 'CINE';
+    font-weight: bolder;
+    font-size: 30px;
+}
+section{
+    margin: 50px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+section #cumple, section #solo, section #amigos{
+    min-height: 300px;
+    width: 100%;
+    height: auto;
+    animation: imagen 2s;
+}
+section div#cumple{
+    background-image: url(../img/cumple.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+section div#solo{
+    background-image: url(../img/cine-solo.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+section div#amigos{
+    background-image: url(../img/amigos.jpeg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
+section:nth-child(2n){
+    background-color: #E1E1E1;
+}
+section:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px 10px 5px 10px;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+footer i{
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+}
+footer i:hover{
+    color: rgb(163, 7, 7);
+}
+footer i.fa-copyright, footer i.fa-copyright:hover{
+    padding: 0 10px 0 0;
+    color: rgb(255, 255, 255);
+}
+footer .redes, footer #contacto{
+    font-weight: bold;
+    font-size: 17px;
+}
+.texto h1{
+    font-weight: bold;
+}
+
+@keyframes imagen {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
